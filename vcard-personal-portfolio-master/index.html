@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head><!-- Swiper CSS -->
+
+
+
+<body>
+
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/image.png" alt="ferhah hala" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="ferhah hala">ferhah hala</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">halaferhah@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">0676606213</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">Juillet 6, 2005</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Sabra, Tlemcen, ALG</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!-- main-content -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>A propre</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link " data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificats</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+ <!-- ABOUT -->
+<article class="about active" data-page="about">
+  <header>
+    <h2 class="h2 article-title">À propos de moi</h2>
+  </header>
+
+  <section class="about-text">
+    <p>
+      Je suis une étudiante en ingénierie informatique passionnée par le développement web, notamment la création d’interfaces modernes et interactives. 
+      Je maîtrise les technologies front-end comme HTML, CSS, JavaScript et React, et je cherche à enrichir mon expérience professionnelle à travers des projets stimulants et des stages qui me permettront de progresser davantage. 
+      En dehors du codage, j’aime découvrir de nouvelles technologies, et je suis aussi intéressée par le design et l’amélioration continue de mes compétences.
+    </p>
+  </section>
+
+  <!-- service -->
+  <section class="service">
+    <h3 class="h3 service-title">Mes activités</h3>
+    <ul class="service-list">
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg" alt="Icône design" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Design de sites web</h4>
+          <p class="service-item-text">
+            Un design moderne et de haute qualité réalisé à un niveau professionnel.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Icône développement web" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Développement web</h4>
+          <p class="service-item-text">
+            Développement de sites web de haute qualité, réalisé à un niveau professionnel.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="Icône applications mobiles" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Applications mobiles</h4>
+          <p class="service-item-text">
+            Développement professionnel d’applications pour iOS et Android.
+          </p>
+        </div>
+      </li>
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-photo.svg" alt="Icône photographie" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Photographie</h4>
+          <p class="service-item-text">
+            Je réalise des photos de haute qualité, toutes catégories confondues, au niveau professionnel.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- testimonials -->
+  <section class="testimonials">
+    <h3 class="h3 testimonials-title">Témoignages</h3>
+    <ul class="testimonials-list has-scrollbar">
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/avatar-1.png" alt="Merad Moh" width="60" data-testimonials-avatar>
+          </figure>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Merad Moh</h4>
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              "Ferhah est une développeuse très motivée et compétente. Elle a toujours respecté les délais et livré un travail de qualité."
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="testimonials-item">
+        <div class="content-card" data-testimonials-item>
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/avatar-2.png" alt="Hamel Aya" width="60" data-testimonials-avatar>
+          </figure>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Hamel Aya</h4>
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              "J’ai apprécié travailler avec Ferhah sur notre application web. Son sens du détail et sa créativité sont remarquables."
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- testimonials modal -->
+  <div class="modal-container" data-modal-container>
+    <div class="overlay" data-overlay></div>
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+        </figure>
+        <img src="./assets/images/icon-quote.svg" alt="Icône citation">
+      </div>
+
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+        <time datetime="2021-06-14">14 juin 2021</time>
+        <div data-modal-text>
+          <p>
+            "Hala a été engagée pour créer une identité visuelle d’entreprise. Nous avons été très satisfaits du travail réalisé. Elle possède une grande expérience et est très attentive aux besoins du client."
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>
+
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <!-- Education -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <h3>Formation</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Baccalauréat scientifique</h4>
+              <span>2023 — 15.08 moyenne</span>
+              <h4 class="timeline-title">Ingénieur d'État en Informatique – Spécialité Génie Logiciel</h4>
+  <span class="timeline-date">[2023] - [2028]</span>
+  <p class="timeline-text">
+    Formation approfondie en développement logiciel, conception d’architectures, gestion de projets et ingénierie des systèmes informatiques.
+  </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <h3>	Expérience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Web Developer</h4>
+              <span>2024 — Présent</span>
+              <p class="timeline-text">Création de sites et applications web modernes.</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+          <h3 class="skills-title">Compétences</h3>
+          <ul class="skills-list">
+            <li class="skill">
+              <div class="title-wrapper">
+                <h5>HTML                </h5>
+                <data value="90">90%</data>
+                <h5>CSS</h5>
+                <data value="90">90%</data>
+                <h5>JS</h5>
+                <data value="80">80%</data>
+                <h5>SQL</h5>
+                <data value="100">100%</data>
+                <h5>REACT</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              <div class="skill-progress-bg1">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              <div class="skill-progress-bg2">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+              <div class="skill-progress-bg3">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+              <div class="skill-progress-bg4">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>toutes</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Sélectionner une catégorie</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>toutes</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <!-- project items (kept as you sent) -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Finance</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <!-- ... (the other project items remain the same) -->
+            <!-- keep the other project li elements unchanged -->
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- BLOG -->
+    
+
+       <!-- ===== CERTIFICATS SECTION ===== -->
+<article class="certificats" data-page="certificats">
+
+  <header>
+    <h2 class="h2 article-title">Certificats</h2>
+  </header>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/images/cert1.png" alt="Certificat 1"></div>
+      <div class="swiper-slide"><img src="assets/images/cert2.png" alt="Certificat 2"></div>
+      <div class="swiper-slide"><img src="assets/images/cert3.png" alt="Certificat 3"></div>
+      <div class="swiper-slide"><img src="assets/images/cert4.png" alt="Certificat 4"></div>
+      <div class="swiper-slide"><img src="assets/images/cert5.png" alt="Certificat 5"></div>
+      <div class="swiper-slide"><img src="assets/images/cert6.png" alt="Certificat 6"></div>
+      <div class="swiper-slide"><img src="assets/images/cert7.png" alt="Certificat 7"></div>
+      <div class="swiper-slide"><img src="assets/images/cert8.png" alt="Certificat 8"></div>
+      <div class="swiper-slide"><img src="assets/images/cert9.png" alt="Certificat 9"></div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+</article>
+
+<!-- ===== Swiper CSS ===== -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- ===== Swiper JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- ===== Swiper Init ===== -->
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+<style>
+  .certificats img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .swiper {
+    padding: 20px 0;
+  }
+</style>
+
+
+<!-- End Certificats Section -->
+
+      </article>
+
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209559.68168108905!2d-1.6861780422896968!3d34.84692863405066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7895425373943d%3A0x4eccb313cc801f52!2sSabra!5e0!3m2!1sfr!2sdz!4v1755069493251!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Formulaire de contact</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Envoyer le message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
